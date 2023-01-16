@@ -83,6 +83,8 @@ GEM
     faker (2.20.0)
       i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
+    font-awesome-sass (6.0.0)
+      sassc (>= 2.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -166,6 +168,9 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
+    simple_form (5.1.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     spring (4.0.0)
     sprockets (4.0.3)
       concurrent-ruby (~> 1.0)
@@ -211,6 +216,7 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   faker
+  font-awesome-sass (~> 6.0.0)
   jbuilder (~> 2.7)
   listen (~> 3.3)
   puma (~> 5.0)
@@ -218,6 +224,7 @@ DEPENDENCIES
   rails (~> 6.1.6)
   sass-rails (>= 6)
   selenium-webdriver (>= 4.0.0.rc1)
+  simple_form
   spring
   sqlite3 (~> 1.4)
   turbolinks (~> 5)
@@ -230,4 +237,4 @@ RUBY VERSION
    ruby 3.0.3p157
 
 BUNDLED WITH
-   2.2.32
+   2.3.26
