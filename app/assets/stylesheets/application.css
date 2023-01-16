@@ -25,7 +25,7 @@
   border-color: #e7e7e7;
   }
 
-.navbar-brand {
+.logo {
     color: #777;
     float: left;
     height: 50px;
@@ -34,16 +34,27 @@
     line-height: 20px;
   }
 
+.logo:hover {
+    color: #333333;
+}
 
 .navbar-right {
     color: #777;
             }
 
+.navbar-right:hover {
+  color: #333333;
+}
 
 a {
 color: #337ab7;
 text-decoration: none;
 background-color: transparent;
+}
+
+a:hover {
+  color: #20507a;
+  text-decoration: underline;
 }
 
 body {
@@ -57,3 +68,48 @@ body {
     padding-right: 15px;
     padding-left: 15px;
     }
+
+.article {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 120%;
+  }
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  }
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 750px;
+  }
+
+.col-sm-offset-2 {
+  margin-left: 16.6666666667%;
+  }
+
+.col-sm-8 {
+  width: 66.6666666667%;
+  }
+
+.col {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+h2 {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  color: #337ab7;
+  text-decoration: none;
+}
