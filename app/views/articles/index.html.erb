@@ -1,8 +1,12 @@
 <div class="container">
-  <% @articles.each do |article| %>
-    <article>
-      <h2><%= link_to article.title, article %></h2>
-      <%= article.content[0..100] %>
-    </article>
-  <% end %>
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <% @articles.each do |article| %>
+        <article>
+          <h2><%= link_to article.title, article %></h2>
+          <%= article.content[0..100] %>
+        </article>
+      <% end %>
+    </div>
+  </div>
 </div>
