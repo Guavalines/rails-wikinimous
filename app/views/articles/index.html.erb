@@ -1,15 +1,8 @@
-
-<%= render 'layouts/navbar'%>
-
-
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2">
-
-
-
-
-
-          <article>
-    <h2><a href="/articles/977">Streamlined 6th generation access</a></h2>
-    Corporis enim corrupti. Molestiae est rerum. Enim suscipit omnis.
+<div class="container">
+  <% @articles.each do |article| %>
+    <article>
+      <h2><%= link_to article.title, article %></h2>
+      <%= article.content[0..100] %>
+    </article>
+  <% end %>
+</div>
