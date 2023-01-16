@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-resources :articles, only: [:new, :create, :show, :update, :destroy, :edit, :index]
+resources :articles
 root 'articles#index'
 
 end
