@@ -1,10 +1,6 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
-  }
 
 .navbar {
     border-radius: 4px;
@@ -12,23 +8,42 @@
     min-height: 50px;
     margin-bottom: 20px;
     border: 1px solid transparent;
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    }
+
+.navbar-brand {
+      color: #777;
+      float: left;
+      height: 50px;
+      padding: 15px 15px;
+      font-size: 18px;
+      line-height: 20px;
     }
 
 
-.navbar:after {
-    display: table;
-    content: " ";
-    clear: both;
-    }
-
-*:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    }
+.navbar-right {
+      color: #777;
+              }
 
 
-.navbar:before, .navbar:after {
-    display: table;
-    content: " ";
+a {
+  color: #337ab7;
+  text-decoration: none;
+  background-color: transparent;
+  }
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;
     }
+
+.container-fluid {
+      padding-right: 15px;
+      padding-left: 15px;
+      }
+
+
+  // ---------------------------------
