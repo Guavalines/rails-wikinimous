@@ -6,28 +6,25 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @article = Article.find(params[:id])
   end
 
   def new
     @article = Article.new
   end
 
-  def create
-    @article = Article.create(list_params)
-
-    if @article.save
-      redirect_to root_path, notice: 'Article was successfully created.'
-    else
-      render :new
-    end
-  end
-
   def edit
     @article = Article.find(params[:id])
   end
 
+  def create
+    @article = Article.new(article_params)
 
+    if @article.save
+      redirect_to @article
+    else
+      render :new
+    end
+  end
 
   def update
     @article = Article.find(params[:id])
@@ -39,22 +36,16 @@ class ArticlesController < ApplicationController
 
   def destroy
     @article.destroy
-
-    respond_to do |format|
-      format.html { redirect_to articles_url, notice: 'Article was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+      redirect_to articles_url, status: :see_other
   end
 
   private
 
-def set_article
-  @article = Article.find(params[:id])
-end
-
+  def set_article
+    @article = Article.find(params[:id])
+  end
 
   def article_params
     params.require(@article).permit(:title, :content)
   end
-
 end
