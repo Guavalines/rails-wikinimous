@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'font-awesome-sass', '~> 6.0.0'
 
-gem "simple_form"
+gem 'simple_form', github: 'heartcombo/simple_form'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
